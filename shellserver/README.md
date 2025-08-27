@@ -20,14 +20,62 @@ pip install -e .
 
 ## Run the server (stdio)
 
+Run server via uv.
+
 ```
-python server.py
+uv run python server.py
 ```
 
-Or via the MCP CLI (if you want discovery / manifest features once available):
-```
-mcp run python server.py
+## Test using Claude desktop
+
+### Testing locally
+
+```json
+{
+  "mcpServers": {
+    "shellserver": {
+      "command": "/path/to/uv",
+      "args": [
+        "--directory",
+        "/path/to/shellserver-dir",
+        "run",
+        "server.py"
+      ]
+    }
+  }
+}
 ```
 
-The server advertises two tools; a client can invoke them per MCP spec.
+### Testing in a container
 
+```json
+{
+  "mcpServers": {
+    "shellserver": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "mcp-shellserver"
+      ]
+    }
+  }
+}
+```
+
+
+## Test using MCP Inspector
+
+### Command
+
+If the command is run via `uv`, provide full path.
+```
+/path/to/uv
+```
+
+### Arguments
+
+```
+--directory /path/to/project/directory run server.py
+```

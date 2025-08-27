@@ -1,4 +1,4 @@
-# MCP 
+# MCP
 
 ## Building npm project
 
