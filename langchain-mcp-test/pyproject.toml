@@ -1,0 +1,12 @@
+[project]
+name = "langchain-mcp-test"
+version = "0.1.0"
+description = "Langchain MCP Test"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain-mcp-adapters>=0.1.9",
+    "langchain-openai>=0.3.32",
+    "langgraph>=0.6.6",
+    "python-dotenv>=1.1.1",
+]

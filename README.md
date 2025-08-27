@@ -100,6 +100,7 @@ langgraph-docs-mcp] [error] spawn uvx ENOENT
 ```
 un init shellserver
 cd shellserver
+uv python pin 3.11
 uv venv
 source .venv/bin/activate
 ```
