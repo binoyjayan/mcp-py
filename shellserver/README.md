@@ -57,6 +57,9 @@ uv run python server.py
         "run",
         "--rm",
         "-i",
+        "--init",
+        "-e",
+        "DOCKER_CONTAINER=true",
         "mcp-shellserver"
       ]
     }
