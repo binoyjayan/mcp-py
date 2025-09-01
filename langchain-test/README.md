@@ -3,7 +3,7 @@
 ## Dependencies
 
 ```
-uv add langchain-mcp-adapters langgraph langchain-openai python-dotenv
+uv add isort python-dotenv google-generativeai langchain langchain-google-genai streamlit
 ```
 
 ## Keys

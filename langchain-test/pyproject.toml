@@ -1,7 +1,7 @@
 [project]
-name = "langchain-mcp-test"
+name = "langchain-test"
 version = "0.1.0"
-description = "Langchain MCP Test"
+description = "Langchain Test"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
