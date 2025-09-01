@@ -98,7 +98,7 @@ langgraph-docs-mcp] [error] spawn uvx ENOENT
 ## Python project and initialize venv
 
 ```
-un init shellserver
+uv init shellserver
 cd shellserver
 uv python pin 3.11
 uv venv
