@@ -20,8 +20,14 @@ stdio_server_params = StdioServerParameters(
 )
 
 async def main():
-    print("Hello from langchain-mcp-test!")
-
+    async with stdio_client(stdio_server_params) as (read, write):
+        # Create a client session that performs heavy lifting of
+        # communicating with the MCP server
+        async with ClientSession(read, write) as session:
+            await session.initialize()
+            tools = await session.list_tools()
+            print(f"Tools loaded: {tools}")
+            agent = create_react_agent(llm, tools)
 
 if __name__ == "__main__":
     asyncio.run(main())
