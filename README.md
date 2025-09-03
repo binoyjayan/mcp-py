@@ -107,8 +107,8 @@ source .venv/bin/activate
 
 ## References
 
+https://github.com/punkpeye/awesome-mcp-servers
 https://modelcontextprotocol.io/docs/getting-started/intro
 https://docs.cursor.com/en/context/mcp
 https://github.com/modelcontextprotocol/quickstart-resources
 https://github.com/emarco177/mcp-crash-course
-
