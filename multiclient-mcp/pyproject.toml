@@ -1,0 +1,15 @@
+[project]
+name = "multiclient"
+version = "0.1.0"
+description = "Multiclient MCP Test"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "google-generativeai>=0.4.1",
+    "langchain-mcp-adapters>=0.1.9",
+    "langgraph>=0.6.6",
+    "python-dotenv>=1.1.1",
+    "langchain-google-genai>=2.0.10",
+    "black>=25.1.0",
+    "fastmcp>=2.12.0",
+]
